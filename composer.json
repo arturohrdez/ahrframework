@@ -1,0 +1,21 @@
+{
+    "name": "ahr/framework",
+    "description": "AHR framework",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Ahr\\Framework\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Arturo Hernández",
+            "email": "ahrcode@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "mezon/router": "^1.5",
+        "vlucas/phpdotenv": "^5.5"
+    }
+}
