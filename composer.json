@@ -18,5 +18,10 @@
         "mezon/router": "^1.5",
         "vlucas/phpdotenv": "^5.5",
         "robmorgan/phinx": "^0.13.4"
+    },
+    "scripts":{
+        "phinx-create": "./vendor/bin/phinx  --configuration=\"./src/config/phinx.php\" create",
+        "phinx-migrate": "./vendor/bin/phinx  --configuration=\"./src/config/phinx.php\" migrate",
+        "phinx-rollback": "./vendor/bin/phinx  --configuration=\"./src/config/phinx.php\" rollback"
     }
 }
