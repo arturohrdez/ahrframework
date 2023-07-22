@@ -61,6 +61,7 @@ class ComposerStaticInit8261453152e9ebeeee1bb5c7aa0eeabc
         ),
         'A' => 
         array (
+            'Ahr\\Models\\' => 11,
             'Ahr\\Framework\\' => 14,
         ),
     );
@@ -153,6 +154,10 @@ class ComposerStaticInit8261453152e9ebeeee1bb5c7aa0eeabc
         'Cake\\Core\\' => 
         array (
             0 => __DIR__ . '/..' . '/cakephp/core',
+        ),
+        'Ahr\\Models\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/models',
         ),
         'Ahr\\Framework\\' => 
         array (

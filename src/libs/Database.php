@@ -29,7 +29,7 @@ class Database{
 			$conn .= "charset=".$this->charset.";";
 
 			$options = [
-				PDO::ATTR_ERRMODE => PDO::ERRORMODE_EXCEPTION,
+				PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
 				PDO::ATTR_EMULATE_PREPARES => false
 			];
 

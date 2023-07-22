@@ -19,7 +19,7 @@ final class CreateUsersTable extends AbstractMigration
     public function change(): void
     {
         $table = $this->table('users',['id'=>false,'primary_key'=>['users_id']]);
-        $table->addColumn('users_id','integer')
+        $table->addColumn('users_id','integer',['identity' => true])
             ->addColumn('username','string',['limit'=>250])
             ->addColumn('password','string')
             ->addColumn('status','enum',['values'=>['active','inactive']])
