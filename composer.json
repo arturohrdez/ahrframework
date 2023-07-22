@@ -16,6 +16,7 @@
     "minimum-stability": "stable",
     "require": {
         "mezon/router": "^1.5",
-        "vlucas/phpdotenv": "^5.5"
+        "vlucas/phpdotenv": "^5.5",
+        "robmorgan/phinx": "^0.13.4"
     }
 }
