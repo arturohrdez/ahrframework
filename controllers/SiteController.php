@@ -12,8 +12,7 @@ class Site extends Controller{
 	}//end function
 
 	public function actionIndex(){
-		echo "entra site index";
-		die();
+		$this->render('site/index');
 	}//end function
 
 	public function actionSignup(){
