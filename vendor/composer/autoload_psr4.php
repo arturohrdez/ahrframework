@@ -28,5 +28,6 @@ return array(
     'Cake\\Datasource\\' => array($vendorDir . '/cakephp/datasource'),
     'Cake\\Database\\' => array($vendorDir . '/cakephp/database'),
     'Cake\\Core\\' => array($vendorDir . '/cakephp/core'),
+    'Ahr\\Models\\' => array($baseDir . '/models'),
     'Ahr\\Framework\\' => array($baseDir . '/src'),
 );

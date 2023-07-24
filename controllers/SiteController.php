@@ -1,7 +1,8 @@
 <?php 
 
 use Ahr\Framework\libs\Controller;
-use Ahr\Framework\models\User;
+use Ahr\Models\User;
+
 /**
  * Site controller
  */
@@ -20,16 +21,13 @@ class Site extends Controller{
 		$password = $this->post('password');
 
 		if (!is_null($username) && !is_null($password)) {
+			$user = new User($username,$password);
+			$result = $user->save();
 			echo "<pre>";
-			var_dump($username);
-			echo "</pre>";
-			echo "<pre>";
-			var_dump($password);
+			var_dump($result);
 			echo "</pre>";
 			die();
-			/*$user = new User($username,$password);
-			$user->save();
-			$this->redirect('/site/login');	*/
+			//$this->redirect('/site/login');
 		}//end if
 		
 		$this->render('signup/form');

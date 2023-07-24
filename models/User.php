@@ -1,5 +1,5 @@
 <?php 
-namespace Ahr\Framework\models;
+namespace Ahr\Models;
 
 use Ahr\Framework\libs\Model;
 use PDO;
@@ -13,6 +13,7 @@ class User extends Model{
 	private array $posts;
 
 	public function __construct(private string $username, private string $password){
+		parent::__construct(); 
 		$this->posts  = [];
 	}//end function
 
@@ -27,8 +28,8 @@ class User extends Model{
 			]);
 			return true;
 		} catch (PDOException $e) {
-			error_log($e->getMessage());
-			return false;
+			die($e->getMessage());
+			//return false;
 		}//end try
 	}//end function
 
